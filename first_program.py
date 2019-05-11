@@ -74,5 +74,8 @@ if a > 100 and a % 4 == 0:
     print(a)
 
 
+# glupi komentarz dla michala
+
+
 
 
