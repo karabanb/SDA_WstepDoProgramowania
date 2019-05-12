@@ -1,9 +1,7 @@
-
 if __name__ == "__main__":
     print('Hello, World!')
     # to jest komentarz
     # zakomentowana instrukcja się nie wykona
-
 
 my_name = 'Bartek'
 my_surname = 'Karaban'
@@ -24,7 +22,7 @@ d = 0x22A
 # napisy i zmienne
 
 name = 'Aleks'
-print(f'Hello, {name}')             # konstrukcja fstring
+print(f'Hello, {name}')  # konstrukcja fstring
 print(name)
 
 # sprawdzanie typu zmiennej
@@ -40,7 +38,7 @@ a = 42
 b = 42
 
 id(a)
-id(b)                               # sa to te same obikety ale o innej etykiecie
+id(b)  # sa to te same obikety ale o innej etykiecie
 
 b = b + 1
 
@@ -74,8 +72,69 @@ if a > 100 and a % 4 == 0:
     print(a)
 
 
-# glupi komentarz dla michala
+# funckje
 
+def add(x1, x2):
+    print(x1 + x2)  # zwraca None, nie można przypisać do zmiennej
+
+
+def add_ret(x, y):  # można zapisać do zmiennej
+    return x + y
+
+
+def is_odd(number):
+    if number % 2 != 0:
+        return True
+    else:
+        return False
+
+
+def is_odd_better(number):
+    if number % 2 != 0:
+        return True
+    return False
+
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    return False
+
+
+def nieuzywana_chujnia():
+    pass                                      # pass - pycharm nie krzyczy, ze funkcja nic nie robi, kod przejdzie dalej
+
+
+# Petle
+
+number = 0
+
+while number < 7:
+    print(number)
+    number += 1
+
+
+number = 7
+
+while number < 7:                              # infinity loop
+    print(number)
+
+while True:
+    print('It\'s very infinite loop')          # infinity loop
+
+
+counter = 0
+
+while counter < 100:
+    counter += 1
+    if counter == 4:
+        print('I do not like 4. Continue')
+        continue
+    print(f'My numer is: {counter}')
+    if counter == 9:
+        print('9 it is enough. Break')
+        break
+    print('\tend')
 
 
 
