@@ -102,10 +102,10 @@ def is_even(number):
 
 
 def nieuzywana_chujnia():
-    pass                                      # pass - pycharm nie krzyczy, ze funkcja nic nie robi, kod przejdzie dalej
+    pass  # pass - pycharm nie krzyczy, ze funkcja nic nie robi, kod przejdzie dalej
 
 
-# Petle
+# Petla while
 
 number = 0
 
@@ -113,15 +113,13 @@ while number < 7:
     print(number)
     number += 1
 
-
 number = 7
 
-while number < 7:                              # infinity loop
+while number < 7:  # infinity loop
     print(number)
 
 while True:
-    print('It\'s very infinite loop')          # infinity loop
-
+    print('It\'s very infinite loop')  # infinity loop
 
 counter = 0
 
@@ -135,6 +133,91 @@ while counter < 100:
         print('9 it is enough. Break')
         break
     print('\tend')
+
+'''
+Napiszemy program który konwertuje liczbe dziesiętną na binarną
+'''
+
+
+def dec_to_bin(n):
+    while n > 0:
+        print(n % 2)
+        n = n // 2
+
+
+# Typy zlozone
+
+empty_list = []
+other_list = [1, 2, 3, 4]
+yet_another_list = [3, 'Bartek', [1, 4, 5]]
+names = ['John', 'Terry', 'Eric']
+
+len(names)
+names.apend('Bartek')
+
+
+def dec_to_bin_better(n):
+    res = []
+    while n > 0:
+        res.append(n % 2)
+        n = n // 2
+    res.reverse()
+    return res
+
+
+meals = ['Spaghetti', 'Pizza', 'Haggis']
+
+i = 0
+while i < len(meals):
+    print(f'{i}: {meals[i]}')
+    i += 1
+
+# petla 'for'
+
+names = ['John', 'Terry', 'Eric']
+
+for name in names:
+    print(name)
+
+prices_to_discount = [100, 30, 45, 76, 999]
+
+for price in prices_to_discount:
+    print(price * 0.8)
+
+# napisy i sekwencje
+
+' '.join(['It', 'will', 'be', 'separated', 'by', 'space'])
+
+'Ten napis chce podzielic na spacjach'.split(' ')
+
+
+def dec_to_bin_better(n):
+    res = []
+    while n > 0:
+        res.apend(str(n % 2))
+        n = n // 2
+    res.reverse()
+    return ''.join(res)
+
+# funckja range
+
+
+for i in range(4):
+    print(i)
+
+for i in range(2, 4):
+    print(i)
+
+for i in range(1, 4, 2):
+    print(i)
+
+res = []
+
+for i in range(2, 101, 2):
+    res.append(i * 7)
+
+print(res)
+
 
 
 
