@@ -185,9 +185,92 @@ if __name__ == '__main__':
         if i % 3 == 0:
             print(f' Liczba {i} jest podzielna przez 3')
 
-
     # zadanie 2. 2. 4
 
     for i in range(15):
         print(i**2)
+
+    # zadanie 2. 3. 1
+
+    name = input('Podaj swoje imię: ')
+    length = 0
+
+    for i in name:
+        length += 1
+
+    print(f'Twoje imię ma {length} liter(y)')
+
+    name = input('Podaj swoje imię: ')
+    length = len(name)
+    print(f'Twoje imię ma {length} liter(y)')
+
+    # zadanie 2. 3. 2
+
+    name = str(input('Podaj swoje imię: '))
+
+    if name.endswith('a'):
+        print('Istnieje niezerowe prawdopodobiństwo, że to imię żeńskie.')
+
+    # zadanie 2. 3. 3
+
+    male_names_with_a = {'Kosma'}
+    female_names_without_a = {'Miriam'}
+
+    name = str(input('Podaj swoje imię: '))
+
+    if name in male_names_with_a:
+        print('Jest to imię męskie')
+    elif name in female_names_without_a:
+        print('Jest to imię żeńskie')
+    elif name.endswith('a'):
+        print('Jest to imię żeńskie')
+    else:
+        print('Jest to imię męskie')
+
+    # zadanie 2. 3. 4
+
+    # zadanie 2. 3. 5
+
+    # zadanie 2. 3. 6
+
+    # zadanie 2. 3. 7
+
+    # zadanie 3. 1. 1
+
+    def area(r):
+        circuit = 3.14 * r ** 2
+        return circuit
+
+    # zadanie 3. 1. 2
+
+    def smaller_int(x, y):
+        result = [x, y]
+        return min(result)
+
+    # zadanie 3. 1. 3
+
+    def greater_int(x, y):
+        result = [x, y]
+        return max(result)
+
+    # zadanie 3. 1. 4
+
+    def division(x, y):
+        if x % y == 0:
+            return True
+        else:
+            return False
+
+    # zadanie 3. 1. 5
+
+    def str_multiple(string, n):
+        for j in range(n):
+            print(string)
+
+
+
+
+
+
+
 
