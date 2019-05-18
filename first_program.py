@@ -317,3 +317,48 @@ example_dict_in_dict['data'][0]
 example_dict_in_dict['data'][0]['name']
 
 
+evens_mult_seven = {}
+
+for i in range(0, 101, 2):
+    evens_mult_seven[i] = i*7
+
+print(evens_mult_seven)
+
+# słownik i pętla for
+
+for key in evens_mult_seven:
+    print(key)
+
+for key, value in evens_mult_seven.items():
+    print(f'Liczba {key} * siedem to {value}')
+
+'id' in user_data                               # sprawdzamy czy klucz znajduje się w słowniku
+
+# Zbiory
+
+part_of_alphabet = {'a', 'b', 'c'}
+part_of_alphabet.add('a')
+
+volves = {'a', 'e', 'y', 'u', 'i', 'o'}
+
+my_name = 'bartek'
+
+for i in my_name:
+    if i in volves:
+        print(i)
+
+# Krotki (tuple)
+
+some_tuple = (1, 'John', 'Smith')
+some_tuple[0]
+
+id, name, surname = some_tuple  # krotki możemy rozpakowywać
+
+print(id)
+print(name)
+
+point = (4, 5)
+x, y = point
+print(x)
+print(y)
+
