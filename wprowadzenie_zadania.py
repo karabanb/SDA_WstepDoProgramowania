@@ -177,6 +177,15 @@ if __name__ == '__main__':
 
     print(f' najwieksza liczba to: {max_num}, jej indeks to: {index}')
 
+    # rozwiazaie Olka
+
+    i = 0
+    max_value = some_numbers[i]
+
+    for item in some_numbers:
+        if max_value < item:
+            max_value = item
+
     # zadanie 2. 2. 3
 
     some_numbers = list(np.random.randint(10, 100, 10))
