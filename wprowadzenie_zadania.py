@@ -172,7 +172,6 @@ if __name__ == '__main__':
     while i < len(some_numbers):
         if some_numbers[i] > max_num:
             max_num = some_numbers[i]
-            index = i
         i += 1
 
     print(f' najwieksza liczba to: {max_num}, jej indeks to: {index}')
