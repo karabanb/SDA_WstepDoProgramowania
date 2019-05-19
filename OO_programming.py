@@ -3,18 +3,18 @@ import math
 
 # możemy to zrobić tak
 
-a = 4
+b = 4
 
 
-def square_area(a):
-    return a ** 2
+def square_area(b):
+    return b ** 2
 
 
-def square_permiter(a):
-    return 4 * a
+def square_permiter(b):
+    return 4 * b
 
 
-print(square_area())
+print(square_area(b))
 
 
 # podchodząc obiektowo zrobimy tak:
@@ -53,8 +53,15 @@ class LineSegment:
              + (self.point_1[1] - self.point_2[1]) ** 2)
         )
 
+    def __str__(self):
+        return f'LineSegment from({self.point_1},to {self.point_2})'
+
+    def __repr__(self):
+        return f'LineSegment({self.point_1}, {self.point_2})'
+
 
 my_line = LineSegment((0, 0), (1, 1))
 
 print(my_line.get_len())
-
+print(my_line)
+print(repr(my_line))

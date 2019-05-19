@@ -44,3 +44,20 @@ assign(some_list2)
 print(some_list)
 
 # Typing
+
+# Funkcja jest obiektem
+
+
+def get_discounted_price(price, discount_func):
+    return discount_func(price)
+
+
+def discount_func_1(price):
+    return 0.8 * price
+
+
+def discount_func_2(price):
+    return 0.9 * price - 1
+
+print(get_discounted_price(99, discount_func_1()))
+print(get_discounted_price(99, discount_func_2()))
