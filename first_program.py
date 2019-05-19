@@ -362,3 +362,82 @@ x, y = point
 print(x)
 print(y)
 
+# Sekwencje cd...
+
+# funkcja zip
+
+# zwraca krotke z kolejnymi wartosciami z podanych jej sekwencji
+
+ex_names = ['Zad. 1', 'Zad. 2', 'Zad. 3']
+marks = [5.5, 3, 4]
+
+for name, mark in zip(ex_names, marks):
+    print(f'{name}: {mark}')
+
+marks_dicts = dict(zip(ex_names, marks))
+
+# list comprehensions
+
+my_list = []
+for n in range(7):
+    if n % 3 == 0:
+        my_list.append(n)
+print(my_list)
+
+my_list_with_comp = [n for n in range(7) if n % 3 == 0]             # alternatywna dla petli - wyrazenie listowe
+print(my_list_with_comp)
+
+
+# sortowanie bąbelkowe - piszemy algorytm
+
+unsorted_list = [7, 4, 8, 1]
+
+
+def bubble_sort(data):
+    #n = len(data) - 1
+    for n in range(len(data) - 1, 0, -1):
+        for j in range(n):
+            print(f'Lista: {data}; obieg ({n}, {j})')
+            if data[j] > data[j+1]:
+                print(f'Zamieniam {data[j]} z {data[j+1]}')
+                data[j], data[j+1] = data[j+1], data[j]             # swap zamiana kolejnosci elemtntów listy
+
+
+
+bubble_sort(unsorted_list)
+
+print(unsorted_list)
+
+# funkcje cd..
+
+# args i kwargs
+
+
+def arbitrary_args(*args, **kwargs):
+    print(args)                                                     # zwraca argumenty pozycyjne
+    print(kwargs)                                                   # zwraca argumenty z kluczem
+
+
+arbitrary_args(5, 'Abra', 'Kadabra', name='John', surname='Cleese')
+
+
+def send_request(url, method='POST', **kwargs):
+    print(url)
+    print(method)
+    print(kwargs)
+
+
+send_request('https://httpbin.org/', token='JWT erf XXX', accept_encoding='UTF-8')
+send_request('https://httpbin.org/', method='GET', token='JWT erf XXX', accept_encoding='UTF-8')
+
+
+# dokumentacja funkcji
+
+def buy_fb_likes(country, how_many):
+    """Allows to buy likes on facebook"""
+    print(f'Congrats! You\'ve bought {how_many} '
+          f'Faceook likes form {country}')
+
+
+
+
