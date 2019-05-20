@@ -174,7 +174,7 @@ if __name__ == '__main__':
             max_num = some_numbers[i]
         i += 1
 
-    print(f' najwieksza liczba to: {max_num}, jej indeks to: {index}')
+    print(f' najwieksza liczba to: {max_num}, jej indeks to: {i}')
 
     # rozwiazaie Olka
 
@@ -286,9 +286,15 @@ if __name__ == '__main__':
             year += 1
         return years
 
+    # zadanie 3. 1. 7
 
+    def palindorme(word):
+        return word == word[::-1]
 
+    # zadanie 3. 1. 8
 
+    def name_concat(name, surname):
+        return ' '.join([name, surname])
 
 
 
