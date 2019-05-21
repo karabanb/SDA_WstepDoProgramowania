@@ -288,8 +288,8 @@ if __name__ == '__main__':
 
     # zadanie 3. 1. 7
 
-    def palindorme(word):
-        return word == word[::-1]
+    def palindorme(words):
+        return words == words[::-1]
 
     # zadanie 3. 1. 8
 
@@ -308,5 +308,26 @@ if __name__ == '__main__':
             if len(str(max_len)) < len(str(i)):
                 max_len = str(i)
         return max_len
+
+    # zadanie 3. 2. 1
+
+    def reverse_list(x):
+        x.reverse()
+        return x
+
+    # zadanie 3. 2. 2
+
+    def check_existing(element, elements):
+        return element in elements
+
+    # zadanie 3. 2. 3
+
+    def even_elements(input):
+        even_indexes = []
+        for i in range(len(input)):
+            if i % 2 == 0:
+                even_indexes.append(input[i])
+        return even_indexes
+
 
 
