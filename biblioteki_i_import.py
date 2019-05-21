@@ -37,3 +37,7 @@ from erastothenes_sieve import erastothenes_sieve
 prime_number = erastothenes_sieve(100)
 print(prime_number)
 
+
+
+
+

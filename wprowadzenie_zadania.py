@@ -297,4 +297,16 @@ if __name__ == '__main__':
         return ' '.join([name, surname])
 
 
+    # zadanie 3. 2. 1
+
+    some_list = ['Bartek', 'Aleksander', 3, 'Damian']
+
+
+    def max_len(some_list):
+        max_len = some_list[0]
+        for i in some_list:
+            if len(str(max_len)) < len(str(i)):
+                max_len = str(i)
+        return max_len
+
 
