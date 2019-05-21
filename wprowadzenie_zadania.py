@@ -309,18 +309,18 @@ if __name__ == '__main__':
                 max_len = str(i)
         return max_len
 
-    # zadanie 3. 2. 1
+    # zadanie 3. 2. 2
 
     def reverse_list(x):
         x.reverse()
         return x
 
-    # zadanie 3. 2. 2
+    # zadanie 3. 2. 3
 
     def check_existing(element, elements):
         return element in elements
 
-    # zadanie 3. 2. 3
+    # zadanie 3. 2. 4
 
     def even_elements(input):
         even_indexes = []
@@ -329,5 +329,40 @@ if __name__ == '__main__':
                 even_indexes.append(input[i])
         return even_indexes
 
+    # zadanie 3. 2. 5
 
+    def sum_list(input):
+        return sum(input)
+
+    # alternatywnie
+
+    def sum_list(input):
+        added = 0
+        for i in range(len(input)):
+            added += input[i]
+        return added
+
+    # zadanie 3. 2. 6
+
+    def the_longest_word(input):
+        max_word = input[0]
+        for word in input:
+            if len(word) > len(max_word):
+                max_word = word
+        return max_word
+
+    # zadanie 3. 2. 7
+
+    def append_no_duplication(my_list, new_element):
+        if new_element not in my_list:
+            my_list.append(new_element)
+        return my_list
+
+    # zadanie 3. 2. 8
+
+    def print_frames(list_to_print):
+        for word in list_to_print:
+            print('*' * len(word) + '****')
+            print(f'* {word} *')
+            print('*' * len(word) + '****')
 
