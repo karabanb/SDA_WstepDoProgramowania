@@ -395,3 +395,11 @@ if __name__ == '__main__':
 
     # zadanie 3. 3. 4
 
+    def sum_of_dict(my_dict):
+        return sum(my_dict.values())
+
+    # zadanie 3. 3. 5
+
+    def remove_key(my_dict, my_key):
+        my_dict.pop(my_key)
+
