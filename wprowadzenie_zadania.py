@@ -366,3 +366,32 @@ if __name__ == '__main__':
             print(f'* {word} *')
             print('*' * len(word) + '****')
 
+
+    # zadanie 3. 3. 1
+
+    my_first_dict = {
+        'id': 1,
+        'first_name': 'Bartek',
+        'last_name': 'Karaban'
+    }
+
+
+    def exist_in_dict(element, my_dict):
+        return element in my_dict
+
+    # zadanie 3. 3. 2
+
+    def key_value(my_dict):
+        for key, value in my_dict.items():
+            print(f' key: {key}, value: {value}')
+
+    # zadanie 3. 3. 3
+
+    def squared_keys(n):
+        output = {}
+        for i in range(n):
+            output[i] = i**2
+        return output
+
+    # zadanie 3. 3. 4
+
