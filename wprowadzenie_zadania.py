@@ -1,3 +1,6 @@
+
+import itertools as iter
+
 if __name__ == '__main__':
 
     # Zadanie 1. 1. 1 obrazek
@@ -402,4 +405,32 @@ if __name__ == '__main__':
 
     def remove_key(my_dict, my_key):
         my_dict.pop(my_key)
+
+    # zadanie 3. 3. 6
+
+    def remove_keys(my_dict, keys):
+        for key in keys:
+            my_dict.pop(key)
+
+    # zadanie 3. 3. 7
+
+    def max_in_dict(my_dict):
+        return max(my_dict.values())
+
+    # zadanie 3. 3. 8
+
+    letters = {1: ['a', 's'], 2: ['b', 'c']}
+
+    def dict_comb(my_dict):
+        combs = []
+        vals = []
+        for key, value in my_dict.items():
+            vals = key
+
+
+
+
+
+    iter.combinations()
+
 
