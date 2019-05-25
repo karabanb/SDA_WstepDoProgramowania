@@ -59,8 +59,26 @@ class LineSegment:
     def __repr__(self):
         return f'LineSegment({self.point_1}, {self.point_2})'
 
+    def __eq__(self, other):
+        if isinstance(other, LineSegment):
+            return(self.point_1 == other.point_1
+                   and self.point_2 == other.point_2)
+        else:
+            return False
+
+
 
 my_line = LineSegment((0, 0), (1, 1))
+my_second_line = LineSegment((0, 0), (1, 1))
+
+print(id(my_line))
+print(id(my_square))
+print(my_line == my_second_line)
+
+print(my_line == 7)
+
+my_other_line = LineSegment((0, 0), (1, 2))
+print(my_other_line == my_line)
 
 print(my_line.get_len())
 print(my_line)
