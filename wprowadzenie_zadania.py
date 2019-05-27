@@ -422,15 +422,71 @@ if __name__ == '__main__':
     letters = {1: ['a', 's'], 2: ['b', 'c']}
 
     def dict_comb(my_dict):
+        pass
         combs = []
         vals = []
         for key, value in my_dict.items():
-            vals = key
+            print(key)
+            print(value)
+
+    # zadanie 3. 3. 9
+
+    sentence = 'Napisz zdanie. Jakieś zwykłe zdanie.'
+
+    def count_words(some_sentence):
+        words_count = []
+        words = sentence.split(' ')
+        for word in words:
+            words_count.append(words.count(word))
+        return dict(zip(words, words_count))
+
+    print(count_words(sentence))
+
+    # zadanie 3. 3. 10
+
+    def count_letters(some_word):
+        letters_count = []
+        letters = list(some_word)
+        for letter in letters:
+            letters_count.append(letters.count(letter))
+        return dict(zip(letters, letters_count))
+
+    print(count_letters('bannana'))
+
+    # better???
+
+    def count_letter_more_pythonic(some_word):
+        letters = list(some_word)
+        letters_count = []
+        return dict(zip(letters, [letters_count.append(letters.count(letter)) for letter in letters]))
+
+    print(count_letters('bannana'))
+
+    # zadanie 3. 3. 11
+
+    users = {'bkaraban': 'chujidupa',
+             'jankowalski': 'janek69',
+             'admin': 'admin1'}
+
+    def authorize(users, username, password):
+        if users[username] == password:
+            return True
+        else:
+            return False
 
 
 
 
 
-    iter.combinations()
+
+
+
+
+
+
+
+
+
+
 
 
