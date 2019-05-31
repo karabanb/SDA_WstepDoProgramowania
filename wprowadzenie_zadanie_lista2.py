@@ -48,4 +48,23 @@ if __name__ == '__main__':
             replicated_dna.append(letters[letter])
         return replicated_dna
 
+    # zadanie 1. 3. 1.
+
+    def get_abolute_zero(scale='K'):
+        zeros = {
+            'K': 0,
+            'C': -273.15,
+            'F': -459.67
+        }
+        print(zeros[scale])
+
+    # zadanie 1. 4. 1.
+
+
+
+
+
+
+
+
 
