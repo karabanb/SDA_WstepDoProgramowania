@@ -60,6 +60,17 @@ if __name__ == '__main__':
 
     # zadanie 1. 4. 1.
 
+    def get_currency(currency='USD', **kwargs):
+
+        prices = {
+            'USD': 10,
+            'EUR': 12,
+            'GBP': 15,
+            'YEN': 20
+        }
+
+        return prices[currency]
+
 
 
 
