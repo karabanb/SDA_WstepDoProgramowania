@@ -58,7 +58,7 @@ if __name__ == '__main__':
         }
         print(zeros[scale])
 
-    # zadanie 1. 4. 1.
+    # zadanie 1. 3. 2.
 
     def get_currency(currency='USD', **kwargs):
 
@@ -71,8 +71,32 @@ if __name__ == '__main__':
 
         return prices[currency]
 
+    # zadanie 1. 3. 3.
+
+    def add_gadgets_regular(welcome_pack):
+        elements = ['Program', 'Ulotka', 'Smycz', 'Ident', 'Długopis']
+        welcome_pack.extend(elements)
 
 
+    def add_gadgets_bussiness(welcome_pack):
+        add_gadgets_regular(welcome_pack)
+        bussiness_elements = ['Koszulka', 'Kubek']
+        welcome_pack.extend(bussiness_elements)
+
+
+    def register_user(user_name, add_gadges_function):
+        gadgets = []
+        add_gadges_function(gadgets)
+        return {
+            'name': user_name,
+            'gadgets': gadgets
+        }
+
+
+    print(register_user('Aleks', add_gadgets_regular))
+    print(register_user('Aleks Biznesowy', add_gadgets_bussiness))
+
+    
 
 
 
